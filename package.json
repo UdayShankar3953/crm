@@ -1,0 +1,12 @@
+{
+    "name": "crm",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "node backend/src/server.js",
+      "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+    },
+    "engines": {
+      "node": "16.x"
+    }
+  }
+  

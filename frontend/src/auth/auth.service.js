@@ -4,6 +4,11 @@ import axios from 'axios';
 import errorHandler from '@/request/errorHandler';
 import successHandler from '@/request/successHandler';
 
+//chnage by uday
+// Include credentials (cookies) in all requests
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = API_BASE_URL;
+
 export const login = async ({ loginData }) => {
   try {
     const response = await axios.post(
@@ -83,7 +88,7 @@ export const resetPassword = async ({ resetPasswordData }) => {
   }
 };
 export const logout = async () => {
-  axios.defaults.withCredentials = true;
+ // axios.defaults.withCredentials = true;
   try {
     // window.localStorage.clear();
     const response = await axios.post(API_BASE_URL + `logout?timestamp=${new Date().getTime()}`);

@@ -16,7 +16,7 @@ export const login = async ({ loginData }) => {
     successHandler(
       { data, status },
       {
-        notifyOnSuccess: false,
+        notifyOnSuccess: true,//changed by uday
         notifyOnFailed: true,
       }
     );

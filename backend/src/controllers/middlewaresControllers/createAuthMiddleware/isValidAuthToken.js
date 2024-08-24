@@ -11,7 +11,7 @@ const isValidAuthToken = async (req, res, next, { userModel, jwtSecret = 'JWT_SE
       return res.status(401).json({
         success: false,
         result: null,
-        message: 'No authentication token, authorization denied.',
+        message: 'NO authentication token, authorization denied.',
         jwtExpired: true,
       });
 

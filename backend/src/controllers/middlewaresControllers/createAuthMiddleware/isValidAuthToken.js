@@ -7,13 +7,13 @@ const isValidAuthToken = async (req, res, next, { userModel, jwtSecret = 'JWT_SE
     const UserPassword = mongoose.model(userModel + 'Password');
     const User = mongoose.model(userModel);
     const token = req.cookies.token;
-    if (!token)
-      return res.status(401).json({
-        success: false,
-        result: null,
-        message: 'NO authentication token, authorization denied.',
-        jwtExpired: true,
-      });
+    // if (!token)
+    //   return res.status(401).json({
+    //     success: false,
+    //     result: null,
+    //     message: 'NO authentication token, authorization denied.',
+    //     jwtExpired: true,
+    //   });
 
     const verified = jwt.verify(token, process.env[jwtSecret]);
 

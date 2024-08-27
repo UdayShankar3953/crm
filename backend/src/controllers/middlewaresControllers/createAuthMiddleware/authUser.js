@@ -59,5 +59,5 @@ const authUser = async (req, res, { user, databasePassword, password, UserPasswo
     });
   }
 };
-
+console.log(token);
 module.exports = authUser;

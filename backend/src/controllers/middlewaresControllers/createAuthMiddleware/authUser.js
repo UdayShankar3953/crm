@@ -32,9 +32,9 @@ const authUser = async (req, res, { user, databasePassword, password, UserPasswo
       .status(200)
       .cookie('token', token, {
         maxAge: req.body.remember ? 365 * 24 * 60 * 60 * 1000 : null,
-        sameSite: 'None',
+        sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
         httpOnly: true,
-        secure: true,
+        secure: process.env.NODE_ENV === 'production',
         domain: 'https://crm-frontend-7345.onrender.com',
         path: '/',
         Partitioned: true,

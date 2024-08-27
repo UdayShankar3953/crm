@@ -27,7 +27,7 @@ const authUser = async (req, res, { user, databasePassword, password, UserPasswo
         new: true,
       }
     ).exec();
-
+  console.log(token);
     res
       .status(200)
       .cookie('token', token, {
@@ -59,5 +59,5 @@ const authUser = async (req, res, { user, databasePassword, password, UserPasswo
     });
   }
 };
-console.log(token);
+
 module.exports = authUser;

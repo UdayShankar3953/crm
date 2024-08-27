@@ -27,14 +27,14 @@ const authUser = async (req, res, { user, databasePassword, password, UserPasswo
         new: true,
       }
     ).exec();
-  console.log(token);
+
     res
       .status(200)
       .cookie('token', token, {
         maxAge: req.body.remember ? 365 * 24 * 60 * 60 * 1000 : null,
         sameSite: 'Lax',
         httpOnly: true,
-        secure: false,
+        secure: true,
         domain: req.hostname,
         path: '/',
         Partitioned: true,

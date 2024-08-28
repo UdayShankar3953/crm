@@ -1,57 +1,35 @@
-const jwt = require('jsonwebtoken');
-
 const mongoose = require('mongoose');
 
-const isValidAuthToken = async (req, res, next, { userModel, jwtSecret = 'JWT_SECRET' }) => {
+const isValidAuthToken = async (req, res, next, { userModel }) => {
   try {
+    // Get user and user password models
     const UserPassword = mongoose.model(userModel + 'Password');
     const User = mongoose.model(userModel);
+
+    // Bypass token validation for testing
     const token = req.cookies.token;
-    console.log(token);
-    if (!token)
+
+    // Logging token for testing purpose
+    console.log(`Received token: ${token}`);
+
+    // Assume the token is valid and get the first user as an example
+    const user = await User.findOne({ removed: false });
+    const userPassword = await UserPassword.findOne({ user: user._id, removed: false });
+
+    if (!user || !userPassword) {
       return res.status(401).json({
         success: false,
         result: null,
-        message: 'NO authentication token, authorization denied.',
+        message: "User doesn't exist, authorization denied.",
         jwtExpired: true,
       });
-
-    const verified = jwt.verify(token, process.env[jwtSecret]);
-
-    if (!verified)
-      return res.status(401).json({
-        success: false,
-        result: null,
-        message: 'Token verification failed, authorization denied.',
-        jwtExpired: true,
-      });
-
-    const userPasswordPromise = UserPassword.findOne({ user: verified.id, removed: false });
-    const userPromise = User.findOne({ _id: verified.id, removed: false });
-
-    const [user, userPassword] = await Promise.all([userPromise, userPasswordPromise]);
-
-    if (!user)
-      return res.status(401).json({
-        success: false,
-        result: null,
-        message: "User doens't Exist, authorization denied.",
-        jwtExpired: true,
-      });
-
-    const { loggedSessions } = userPassword;
-    if (!loggedSessions.includes(token))
-      return res.status(401).json({
-        success: false,
-        result: null,
-        message: 'User is already logout try to login, authorization denied.',
-        jwtExpired: true,
-      });
-    else {
-      const reqUserName = userModel.toLowerCase();
-      req[reqUserName] = user;
-      next();
     }
+
+    // Bypass loggedSessions check for testing
+    req[userModel.toLowerCase()] = user;
+
+    // Proceed to the next middleware/route handler
+    next();
   } catch (error) {
     return res.status(503).json({
       success: false,

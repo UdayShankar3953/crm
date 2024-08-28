@@ -6,17 +6,14 @@ import successHandler from '@/request/successHandler';
 
 export const login = async ({ loginData }) => {
   try {
+     axios.defaults.withCredentials = true;
     const response = await axios.post(
       API_BASE_URL + `login?timestamp=${new Date().getTime()}`,
       loginData
     );
 
     const { status, data } = response;
-if (data.token) {
-      // Assuming your backend sends a token in the response
-      localStorage.setItem('token', data.token);
-      axios.defaults.headers.common['Authorization'] = `Bearer ${data.token}`;
-    }
+
     successHandler(
       { data, status },
       {
@@ -87,15 +84,12 @@ export const resetPassword = async ({ resetPasswordData }) => {
   }
 };
 export const logout = async () => {
-  //axios.defaults.withCredentials = true;
+  axios.defaults.withCredentials = true;
   try {
     // window.localStorage.clear();
     const response = await axios.post(API_BASE_URL + `logout?timestamp=${new Date().getTime()}`);
     const { status, data } = response;
-    if (data.success) {
-      localStorage.removeItem('token');
-      delete axios.defaults.headers.common['Authorization'];
-    }
+    
     successHandler(
       { data, status },
       {

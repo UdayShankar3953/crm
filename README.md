@@ -18,6 +18,9 @@
 - Ant Design Framework (AntD) 🐜
 - Based on MERN Stack (Node.js / Express.js / MongoDb / React.js) 👨‍💻
 
+## Live App
+[Live Demo](https://crm-frontend-7345.onrender.com)
+
 ### Can I use this for Commercial purposes?
 
 - Yes, you can use this project for free for both personal and commercial use.

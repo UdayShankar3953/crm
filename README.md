@@ -1,140 +1,102 @@
+# CRM | Node.js React.js
 <div align="center">
-    <a href="https://www.idurarapp.com/">
-  <img src="https://avatars.githubusercontent.com/u/50052356?s=200&v=4" width="128px" />
+    <a href="https://www.example.com/">
+        <img src="/frontend/src/style/images/idurar-crm-erp.svg" width="128px" />
     </a>
-    <h1>Open "Fair-Code" Source ERP / CRM | Node.js React.js</h1>
+    <h1>Open Source CRM | Node.js React.js</h1>
     <p align="center">
-        <p>IDURAR ERP CRM | Simple To Use | 44 Languages </p>
+        <p>Easy-to-Use CRM Solution</p>
     </p>
-    
-  [www.idurarapp.com/open-source-erp-crm/](https://www.idurarapp.com/open-source-erp-crm/)
-
-## 🇦🇱 🇩🇿 🇧🇩 🇧🇬 🇨🇳 🇭🇷 🇨🇿 🇩🇰 🇳🇱 🇺🇸 🇪🇪 🇫🇷 🇩🇪 🇬🇷 🇮🇳 🇭🇺 🇮🇩 🇮🇹 🇯🇵 🇰🇷 🇱🇻 🇱🇹 🇲🇰 🇲🇾 🇳🇴 🇵🇱 🇧🇷 🇵🇹 🇮🇷 🇷🇴 🇷🇺 🇸🇰 🇸🇮 🇪🇸 🇸🇪 🇹🇭 🇹🇷 🇺🇦 🇵🇰 🇻🇳 🇷🇸 🇪🇦 🇵🇭 🇫🇮
-
-IDURAR is Open "Fair-Code" Source ERP / CRM (Invoice / Inventory / Accounting / HR) Based on Advanced Mern Stack (Node.js / Express.js / MongoDb / React.js ) with Ant Design (AntD) and Redux
 
 </div>
 
-**Live App Free Cloud Version** : [https://www.idurarapp.com/demo-erp-crm/](https://www.idurarapp.com/demo-erp-crm/)
+## Features
 
-```
-🚀 Give a Star ⭐️ & Fork to this project ... Happy coding! 🤩`
-```
+- Invoice Management 💰
+- Accounting Management 📈
+- HR Management 🧑‍🤝‍🧑
+- Ant Design Framework (AntD) 🐜
+- Based on MERN Stack (Node.js / Express.js / MongoDb / React.js) 👨‍💻
 
-## Translation :
+### Can I use this for Commercial purposes?
 
-[French](doc/README.fr.md#French-Translation) , [Spanish](doc/README.sp.md#Spanish-Translation)
+- Yes, you can use this project for free for both personal and commercial use.
 
-## License
+### For custom development service or premium support:
 
-IDURAR is Free Open Source [fair-code](http://faircode.io) distributed under the
-[**IDURAR License 1.0**](https://github.com/idurar/idurar-erp-crm/blob/master/LICENSE)
+[Get in touch](mailto:212g1a3953@gmail.com)
 
-### Upgrade to IDURAR Premium :
 
-- [https://cloud.idurarapp.com/checkout/selfhosted/month/pri_01hyjjay1njx5vz1z6e1vdy1eg](https://cloud.idurarapp.com/checkout/selfhosted/month/pri_01hyjjay1njx5vz1z6e1vdy1eg)
+## Getting Started
 
-## Features :
-
-Invoice Management 💰
-
-Accounting Management 📈
-
-HR Management 🧑‍🤝‍🧑
-
-Ant Design Framework(AntD) 🐜
-
-Based on Mern Stack (Node.js / Express.js / MongoDb / React.js ) 👨‍💻
-
-### May i can use IDURAR for Commercial use :
-
-- Yes You can use IDURAR for free for personal or Commercial use.
-
-### For custom developement service or premium Support :
-
-[Get in touch](mailto:hello@idurarapp.com)
-
-## How To Deploy IDURAR ERP CRM :
-
-🔥 I would like to invite you for a weekly free IDURAR Webinar (Node.js React.js course), where you learn how to deploy IDURAR on cloud , and create a new api and new crud app with IDURAR in just one hour ?
-Please fill this form if you are interested : [https://forms.gle/qz2YZ3xQFQ77bGhS8](https://forms.gle/qz2YZ3xQFQ77bGhS8)
-
-The Webinar will be this Wednesday at 1pm GMT.
-
-## Our Sponsors
-
-  <a href="https://m.do.co/c/4ead8370b905?ref=idurarapp.com">
-    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg" width="201px">
-  </a>
-
-#
-
-<img width="1403" alt="Open Source ERP CRM" src="https://github.com/idurar/idurar-erp-crm/assets/136928179/a6712286-7ca6-4822-8902-fb7523533ee8">
-
-## Free Open Source ERP / CRM App
-
-IDURAR is Open "Fair-Code" Source ERP / CRM (Invoice / Inventory / Accounting / HR) Based on Mern Stack (Node.js / Express.js / MongoDb / React.js ) with Ant Design (AntD) and Redux
-
-**Live App Demo** : [https://www.idurarapp.com/demo-erp-crm/](https://www.idurarapp.com/demo-erp-crm/)
-
-## Getting started
-
-1.[Clone the repository](INSTALLATION-INSTRUCTIONS.md#step-1-clone-the-repository)
-
-2.[Create Your MongoDB Account and Database Cluster](INSTALLATION-INSTRUCTIONS.md#Step-2-Create-Your-MongoDB-Account-and-Database-Cluster)
-
-3.[Edit the Environment File](INSTALLATION-INSTRUCTIONS.md#Step-3-Edit-the-Environment-File)
-
-4.[Update MongoDB URI](INSTALLATION-INSTRUCTIONS.md#Step-4-Update-MongoDB-URI)
-
-5.[Install Backend Dependencies](INSTALLATION-INSTRUCTIONS.md#Step-5-Install-Backend-Dependencies)
-
-6.[Run Setup Script](INSTALLATION-INSTRUCTIONS.md#Step-6-Run-Setup-Script)
-
-7.[Run the Backend Server](INSTALLATION-INSTRUCTIONS.md#Step-7-Run-the-Backend-Server)
-
-8.[Install Frontend Dependencies](INSTALLATION-INSTRUCTIONS.md#Step-8-Install-Frontend-Dependencies)
-
-9.[Run the Frontend Server](INSTALLATION-INSTRUCTIONS.md#Step-9-Run-the-Frontend-Server)
-
-## Docker Compose for local development
-
-- setup additional env variables, if necessary in the below file
+**Step 1: Clone the repository**
 
 ```bash
-docker-compose.yml
+git clone https://github.com/UdayShankar3953/crm.git
+cd crm
 ```
 
-- After the necessary configurations run below command :
+**Step 2: Create Your MongoDB Account and Database Cluster**
+
+Create your own MongoDB account by visiting the MongoDB website and signing up for a new account.
+
+Create a new database or cluster by following the instructions provided in the MongoDB documentation. Remember to note down the "Connect to your application URI" for the database, as you will need it later. Also, make sure to replace <password> with your own password.
+
+Add your current IP address to the MongoDB database's IP whitelist to allow connections (this is needed whenever your IP changes).
+
+**Step 3: Edit the Environment File**
+
+Check the file named .env in the /backend directory. This file will store environment variables for the project to run.
+
+**Step 4: Update MongoDB URI**
+
+In the .env file, find the line that reads:
+```bash
+DATABASE="your-mongodb-uri"
+```
+Replace "your-mongodb-uri" with the actual URI of your MongoDB database.
+
+**Step 5: Install Backend Dependencies**
+
+In your terminal, navigate to the /backend directory:
 
 ```bash
-docker-compose up -d
+cd backend
 ```
+Then run the following command to install the backend dependencies:
 
-This will build the images and bring up the containers for frontend, backend and mongodb.
+```bash
+npm install
+```
+This command will install all the required packages specified in the package.json file.
 
-**_NOTE:_** This docker-compose setup is associated for local development only.
+**Step 6: Run Setup Script**
 
-## Contributing
+While still in the /backend directory of the project, execute the following command to run the setup script:
+```bash
+npm run setup
+```
+This setup script may perform necessary database migrations or any other initialization tasks required for the project.
 
-1.[How to contribute](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#how-to-contribute)
+**Step 7: Run the Backend Server**
 
-2.[Reporting issues](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#reporting-issues)
+In the same terminal, run the following command to start the backend server:
+```bash
+npm run dev
+```
+This command will start the backend server, and it will listen for incoming requests.
 
-3.[Working on issues ](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#working-on-issues)
+**Step 8: Install Frontend Dependencies**
 
-4.[Submitting pull requests](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#submitting-pull-requests)
+Open a new terminal window, and run the following command to install the frontend dependencies:
+```bash
+cd frontend
+npm install
+```
+Step 9: Run the Frontend Server
 
-5.[Commit Guidelines](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#commit-guidelines)
-
-6.[Coding Guidelines](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#coding-guidelines)
-
-7.[Questions](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#questions)
-
-## Custom Development Service
-
-Custom Development Service are available : [Get in touch](mailto:hello@idurarapp.com)
-
-## Show your support
-
-Dont forget to give a ⭐️ to this project ... Happy coding!
+After installing the frontend dependencies, run the following command in the same terminal to start the frontend server:
+```bash
+npm run dev
+```
+This command will start the frontend server, and you'll be able to access the website on localhost:3000 in your web browser.

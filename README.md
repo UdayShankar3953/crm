@@ -100,3 +100,7 @@ After installing the frontend dependencies, run the following command in the sam
 npm run dev
 ```
 This command will start the frontend server, and you'll be able to access the website on localhost:3000 in your web browser.
+
+<img src="frontend/Screenshots/Screenshot (202).png" width="128px" />
+<img src="frontend/Screenshots/Screenshot (204).png" width="128px" />
+<img src="frontend/Screenshots/Screenshot (205).png" width="128px" />

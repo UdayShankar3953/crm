@@ -3,7 +3,7 @@
     <a href="https://www.example.com/">
         <img src="/frontend/src/style/images/idurar-crm-erp.svg" width="128px" />
     </a>
-    <h1>Open Source CRM | Node.js React.js</h1>
+    <h1>CRM | Node.js React.js</h1>
     <p align="center">
         <p>Easy-to-Use CRM Solution</p>
     </p>

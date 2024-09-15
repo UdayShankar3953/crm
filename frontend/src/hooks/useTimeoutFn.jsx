@@ -36,3 +36,4 @@ export default function useTimeoutFn(fn, ms = 0) {
 
   return [isReady, clear, set];
 }
+

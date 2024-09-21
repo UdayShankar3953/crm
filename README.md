@@ -116,4 +116,3 @@ This command will start the frontend server, and you'll be able to access the we
 
 <img src="frontend/Screenshots/Screenshot (204).png" alt="Invoice Management" width="800"/>
 
-

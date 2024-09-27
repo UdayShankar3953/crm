@@ -5,3 +5,4 @@ const isBrowser = !!(
 );
 
 export default isBrowser;
+

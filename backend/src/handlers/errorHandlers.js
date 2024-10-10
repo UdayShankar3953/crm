@@ -26,6 +26,8 @@ exports.catchErrors = (fn) => {
           controller: fn.name,
           error: error,
         });
+
+        
       }
     });
   };

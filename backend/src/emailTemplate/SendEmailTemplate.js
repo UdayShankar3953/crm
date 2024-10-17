@@ -85,3 +85,4 @@ exports.SendPaymentReceipt = ({
     </div>
     `;
 };
+

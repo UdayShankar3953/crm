@@ -41,3 +41,4 @@ const useLanguage = ({ selectedLang }) => {
 };
 
 module.exports = useLanguage;
+

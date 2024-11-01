@@ -45,3 +45,4 @@ AdminPasswordSchema.methods.validPassword = function (salt, userpassword) {
 };
 
 module.exports = mongoose.model('AdminPassword', AdminPasswordSchema);
+

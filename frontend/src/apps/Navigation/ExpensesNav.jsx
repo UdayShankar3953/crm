@@ -69,6 +69,7 @@ function Sidebar({ collapsible, isMobile = false }) {
       }
   }, [location, currentPath]);
 
+  
   useEffect(() => {
     if (isNavMenuClose) {
       setLogoApp(isNavMenuClose);

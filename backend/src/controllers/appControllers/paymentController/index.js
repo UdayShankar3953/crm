@@ -7,6 +7,7 @@ const update = require('./update');
 const remove = require('./remove');
 const sendMail = require('./sendMail');
 
+
 methods.mail = sendMail;
 methods.create = create;
 methods.update = update;

@@ -7,6 +7,7 @@ export const BASE_URL =
     ? import.meta.env.VITE_BACKEND_SERVER
     : 'http://localhost:8888/';
 
+
 export const WEBSITE_URL = import.meta.env.PROD
   ? 'http://cloud.idurarapp.com/'
   : 'http://localhost:3000/';

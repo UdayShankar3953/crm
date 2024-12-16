@@ -6,7 +6,7 @@
     <h1>CRM | Node.js React.js</h1>
     <p align="center">
         <p>Easy-to-Use CRM Solution</p>
-    </p>
+</p>
 
 </div>
 

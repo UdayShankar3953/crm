@@ -7,6 +7,7 @@ import { useAppContext } from '@/context/appContext';
 
 import routes from './routes';
 
+
 export default function AppRouter() {
   let location = useLocation();
   const { state: stateApp, appContextAction } = useAppContext();
